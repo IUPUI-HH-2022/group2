@@ -1,6 +1,6 @@
 * {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Ubuntu',
-		'Droid Sans', 'Helvetica Neue', sans-serif;
+		'Droid Sans', 'Helvetica Neue', sans-serif, 'SF Pro';
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -19,40 +19,79 @@ html {
 		'n m m m'
 		'n f f f';
 
-	background-color: rgba(207, 207, 207, 0.307);
+	background-color: rgba(255, 255, 255, 0.307);
+}
+
+image {
+	display: none;
+	/*for now to work easier*/
+
 }
 
 nav {
-	grid-area: n;
-	border: 1px solid black;
-	width: 15vw;
+	padding-left: 30px;
+	padding-top: 40px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	width: 300px;
+	height: 2000px;
+	background: #F2F2F2;
+	border: 2px solid #F2F2F2;
+}
+
+.navItem {
+	width: 450px;
+	padding: 20px;
 }
 
 
 .sticky {
-	position: sticky;
-	top: 0;
+	width: 300px;
+	height: 159px;
+	left: 10px;
+	top: 246px;
 }
 
 header {
 	grid-area: h;
-	border: 1px solid black;
-	width: 85vw;
-	background-color: white;
-	justify-content: center;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 38px;
+	margin: 24px 24px;
+	width: 800px;
+	height: 159px;
+	left: 20px;
+	top: 246px;
+	color: rgb(101, 169, 169);
+
 }
 
+
 main {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
 	grid-area: m;
-	border: 1px solid black;
-	width: 85vw;
 	background-color: white;
+	color: #6c6c6c;
+	flex-grow: 0;
+	padding: 70px;
+
 }
+
+.mainImg {
+	display: none;
+}
+
 
 footer {
 	grid-area: f;
 	border: 1px solid black;
-	width: 85vw;
 	background-color: white;
 }
 
