@@ -19,14 +19,10 @@ html {
 		'n m m m'
 		'n f f f';
 
-	background-color: rgba(255, 255, 255, 0.307);
+	background-color: rgb(255, 255, 255);
 }
 
-image {
-	display: none;
-	/*for now to work easier*/
-
-}
+image {}
 
 nav {
 	padding-left: 30px;
@@ -41,6 +37,26 @@ nav {
 	border: 2px solid #F2F2F2;
 }
 
+.navList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+
+.navLink:hover {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #e0d3da;
+
+}
+
+
+
 .navItem {
 	width: 450px;
 	padding: 20px;
@@ -49,25 +65,29 @@ nav {
 
 .sticky {
 	width: 300px;
-	height: 159px;
+	height: 0px;
 	left: 10px;
-	top: 246px;
+	top: 250px;
 }
 
-header {
+.title {
 	grid-area: h;
-
 	font-style: normal;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 38px;
-	margin: 24px 24px;
-	width: 800px;
-	height: 159px;
 	left: 20px;
 	top: 246px;
-	color: rgb(101, 169, 169);
-
+	color: #FFFFFF;
+	background: #2F80ED;
+	opacity: 0.8;
+	width: 100%;
+	height: 150px;
+	left: 0px;
+	top: 246px;
+	padding-left: 72px;
+	padding-top: 46px;
+	padding-bottom: 46px;
 }
 
 
@@ -81,18 +101,37 @@ main {
 	color: #6c6c6c;
 	flex-grow: 0;
 	padding: 70px;
+	padding-top: 0px;
 
 }
 
 .mainImg {
-	display: none;
+	max-height: 300px;
+	width: 100%;
+	overflow: hidden;
 }
+
+.mainImg::before {
+	content: "";
+	display: block;
+	padding-bottom: 50%;
+	padding-top: 0px;
+}
+
+
 
 
 footer {
 	grid-area: f;
-	border: 1px solid black;
+	border-top: 1px solid black;
 	background-color: white;
+	padding: 72px;
+
+
+}
+
+.btt {
+	float: right
 }
 
 /*FIRST BREAK POINT === tablet */
