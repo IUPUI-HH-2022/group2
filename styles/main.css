@@ -182,39 +182,11 @@ blockquote {
 	}
 }
 
-/*FIRST BREAK POINT === tablet */
-@media only screen and (max-width: 900px) {}
-
-/*SECOND BREAK POINT === mobile */
-@media only screen and (max-width: 650px) {
-	h1 {
-		font-size: 1.75rem;
-	}
-
-	h2 {
-		font-size: 1.375rem;
-	}
-
-	h3 {
-		font-size: 1.125rem;
-	}
-
-	p, a, span, li, figcaption, blockquote {
-		font-size: 0.9375rem;
-	}
+/* FIRST BREAK POINT === 10.5" iPad Pro */
+@media only screen and (max-width: 1112px) {
 
 	section, footer, hr {
-		margin: 1.25rem 0;
-		padding: 0 1rem;
-	}
-
-	header {
-		height: 17.5rem;
-		margin-top: 2rem;
-	}
-	
-	.header-title {
-		padding: 0.5rem 1rem;
+		margin: 1.5rem 0;
 	}
 
 	/* Nav Code */
@@ -264,6 +236,39 @@ blockquote {
 
 	button#mobile-menu {
 		display: initial;
+	}
+}
+
+/*SECOND BREAK POINT === mobile */
+@media only screen and (max-width: 650px) {
+	h1 {
+		font-size: 1.75rem;
+	}
+
+	h2 {
+		font-size: 1.375rem;
+	}
+
+	h3 {
+		font-size: 1.125rem;
+	}
+
+	p, a, span, li, figcaption, blockquote {
+		font-size: 0.9375rem;
+	}
+
+	section, footer, hr {
+		margin: 1.25rem 0;
+		padding: 0 1rem;
+	}
+
+	header {
+		height: 17.5rem;
+		margin-top: 2rem;
+	}
+	
+	.header-title {
+		padding: 0.5rem 1rem;
 	}
 
 	.image-group img {
