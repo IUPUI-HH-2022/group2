@@ -51,6 +51,7 @@ a {
 
 figcaption {
 	font-style: italic;
+	margin-top: 1rem;
 }
 
 body {
@@ -149,6 +150,10 @@ header img {
 section, footer, hr {
 	margin: 2.25rem 0;
 	padding: 0 4.5rem;
+}
+
+.image-group img {
+	max-width: 15rem; /* 240px */
 }
 
 hr {
@@ -250,5 +255,13 @@ blockquote {
 
 	button#mobile-menu {
 		display: initial;
+	}
+
+	.image-group img {
+		display: block;
+	}
+
+	.image-group img:first-child {
+		margin-bottom: 1rem;
 	}
 }
