@@ -5,20 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Meta Descriptions -->
-		<meta
-			name="title"
-			content="Design for Everyone: A guide to inclusive web design"
-		/>
-
-		<meta
-			name="description"
-			content="Helping developers make their sites accessible for all."
-		/>
-
-		<meta
-			name="keywords"
-			content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility"
-		/>
+		<meta name="title" content="Design for Everyone: A guide to inclusive web design" />
+		<meta name="description" content="Helping developers make their sites accessible for all."/>
+		<meta name="keywords" content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility" />
 
 		<!-- Favicon -->
 		<link rel="icon" href="images/eye.svg" />
@@ -27,155 +16,64 @@
 		<link rel="stylesheet" href="../styles/main.css" />
 
 		<!-- Title -->
-		<title>Design for Everyone: Responsive Design</title>
+		<title>Design for Everyone: Responsive Web Design</title>
 	</head>
 	<body>
-		<!-- Grid-container -->
-		<div class="grid-container">
-			<!-- Header -->
-			<div class="sticky">
-				<header class="header">
-					<a href="../index.html" class="homeButton"
-						><img src="../images/logo-placeholder.png" alt="logo/home button"
-					/></a>
-				</header>
-
-				<!-- Nav -->
-				<nav class="nav">
-					<ul class="navList">
-						<li class="navItem">
-							<a class="navLink" href="../index.html">Overview</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="text.html">Text and Readability</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="semantics.html">Semantics</a>
-						</li>
-
-						<li class="current">
-							<a class="navLink" href="#">Responsive Design</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="file-size.html">File Size</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="organization.html">Organization</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
+		<div class="flex-container">
+			<!-- Nav -->
+			<nav class="nav">
+				<!-- logo button -->
+				<a href="index.html" class="logo"><img src="../images/logo-placeholder.png" alt="logo/home button"></a>
+				<!-- nav links -->
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="text.html">Text & Readability</a></li>
+					<li><a href="semantics.html">Semantics</a></li>
+					<li class="current"><a href="#">Responsive Web Design</a></li>
+					<li><a href="file-size.html">File Size</a></li>
+					<li><a href="organization.html">Organization Systems</a></li>
+				</ul>
+				<div>
+					<button id="mobile-menu">
+						<span>Menu&nbsp;</span>
+						<div class="burger">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</button>
+				</div>	
+			</nav>
 			<!-- Main -->
 			<main class="main">
-				<!-- Top Image -->
-				<img
-					class="mainImg"
-					src="../images/image-placeholder.jpeg"
-					alt="placeholder"
-				/>
-
-				<!-- Title -->
-				<div class="title">
-					<h1>Responsive Web Design</h1>
-					<h4>Subtitle Text</h4>
-				</div>
-
-				<h2>About This Site</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-					blanditiis earum voluptate obcaecati voluptates expedita, hic vero,
-					suscipit alias, quibusdam excepturi ullam exercitationem. In
-					reprehenderit dolorem aperiam dignissimos pariatur? Vitae?
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-					nisi iure delectus quod optio cumque odit est modi, placeat ipsam
-					iusto fuga consequatur id commodi quos eos quaerat sunt consectetur.
-				</p>
-
-				<h2>About us</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-					tempora ex voluptates harum distinctio suscipit voluptatum
-					necessitatibus ut veniam. Doloribus pariatur molestias accusamus
-					voluptate facilis impedit sequi tempore, culpa ex.
-				</p>
-
-				<img
-					class="hhImage"
-					src="../images/image-placeholder.jpeg"
-					alt="image"
-				/>
-
-				<h3>Haaga-Helia</h3>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-					dicta vel, est eum alias cupiditate vero tempore eaque voluptates sunt
-					exercitationem facere praesentium, non impedit earum cumque architecto
-					optio neque? Learn more at
-					<a href="https://www.haaga-helia.fi/en">haaga-helia.fi</a>
-				</p>
-
-				<img
-					class="iupuiImage"
-					src="../images/image-placeholder.jpeg"
-					alt="image"
-				/>
-				<h3>IUPUI</h3>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-					dicta sint. Itaque pariatur amet impedit voluptatem eveniet accusamus,
-					voluptatum placeat aperiam nulla quos tempora culpa aliquid
-					consequatur. Quibusdam, iste doloribus?
-				</p>
-
-				<h2>Helpful Resources</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-					mollitia, itaque quis laborum quos veniam libero repellendus deleniti
-					ex similique harum praesentium aut voluptatibus suscipit voluptates?
-					Maiores inventore obcaecati sed?
-				</p>
-
-				<ul>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-				</ul>
+				<!-- Header -->
+				<header>
+					<!-- Top Image -->
+					<img src="../images/placeholder-header-image.png" alt="placeholder" />
+					<div class="header-title subpage">
+						<h1>Responsive Web Design</h1>
+					</div>
+				</header>
+				<!-- Content -->
+				<section>
+					<h2>Supporting Mobile, Web, and Tablet devices</h2>
+					<p>In today’s busy, connected world, access to the internet has become a necessity in many places. We use it at work, school, home and depending on where we are using it, the device we are on might change. We have large screen desktop computers, medium screen laptops, smaller screens on tablets, and even smaller screens on mobile devices. When creating a website, it is imperative that this be taken into account.</p>
+					<p>That is where responsive web design comes into play. A responsive webpage will automatically adjust depending on what type of device you are using to view it. For instance, on a large screen, everything on a webpage could potentially be visible in one hemisphere but when viewed on a mobile device, that same webpage will be laid out differently. Instead of things being in one line, they may be stacked. Some aspects of the page, like images, may be hidden completely.</p>
+					<p>Since users can do everything from finding information to checking in virtually with family to ordering groceries online and have them delivered from phones, having a website that adjusts for mobile use will make the web accessible to people with smaller screens. One of the ways that designers are handling this is to design for mobile first. You can do this with HTML and CSS.</p>
+				</section>
+				<!-- Footer -->
+				<hr>
+				<footer>
+					<div class="flex-container">
+						<a href="../index.html"><img src="../images/logo-placeholder.png" alt="logo"/></a>
+						<a href="#">Back to Top</a>
+					</div>
+					<blockquote>“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.” — Tim Berners-Lee, W3C Director and inventor of the World Wide Web</blockquote>
+					<p>Copyright <span id="copyright-year">2022</span></p>
+				</footer>
 			</main>
-
-			<footer class="footer">
-				<a href="#" class="btt">Back to Top</a>
-				<a href="../index.html"
-					><img src="../images/logo-placeholder.png" alt="logo"
-				/></a>
-				<p>Copyright 2022</p>
-			</footer>
 		</div>
-		<!-- End container -->
 	</body>
-	<script src="scripts/main.js"></script>
+	<!-- Scripts -->
+	<script src="../scripts/main.js"></script>
 </html>
