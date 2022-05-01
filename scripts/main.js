@@ -1,30 +1,36 @@
-// On document load, update the current year in the footer
+// On document load...
 document.addEventListener('DOMContentLoaded', function () {
+
+    // Update the current year in the footer
     document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
-}, false);
 
-// Mobile menu
-const navSlide = () => {
+    // Set up mobile menu
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navList');
-    const navLinks = document.querySelectorAll('.navList li');
+    const nav = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li');
+    const button = document.getElementById('mobile-menu');
 
 
-    burger.addEventListener('click',()=> {
+    button.addEventListener('click',()=> {
+
         // Toggle navigation
-        nav.classList.toggle('nav-active');
+        nav.classList.toggle('visible');
 
-    // Animate links
+        // Animate links
         navLinks.forEach((link, index) => {
             if(link.style.animation){
                 link.style.animation = ''
-            }else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
+            } else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 25 }s`;
             }
         });
+        
+        // TODO: Fix burger
         // Burger animation
         burger.classList.toggle('toggle');
-    });    
-}
 
-navSlide();
+        // TODO: Set text to "Close" or vice versa
+
+    });
+
+}, false);
