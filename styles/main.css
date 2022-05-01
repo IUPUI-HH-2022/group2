@@ -36,10 +36,21 @@ h3 {
 	font-size: 1.5rem;
 }
 
-p, li, caption, blockquote {
-	color: var(--color-grey-1);
+p, a, span, li, figcaption, blockquote {
 	line-height: 1.4;
 	font-size: 1.125rem;
+}
+
+p, li, figcaption, blockquote {
+	color: var(--color-grey-1);
+}
+
+a {
+	color: var(--color-blue-1);
+}
+
+figcaption {
+	font-style: italic;
 }
 
 body {
@@ -85,8 +96,21 @@ nav ul li.current {
 	font-weight: bold;
 }
 
-main {
-	padding: 0 0 4.5rem;  
+button#mobile-menu {
+	padding: 0.5rem 0.75rem;
+	background-color: #E1EAF7;
+	border-radius: 0.25rem;
+	font-weight: bold;
+	border: 0;
+	color: var(--color-blue-0);
+	cursor: pointer;
+	font-size: 1.125rem;
+	transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+	display: none;
+}
+
+button#mobile-menu:hover {
+	background-color: #C4D6EE;
 }
 
 header {
@@ -112,13 +136,23 @@ header img {
 	background-color: var(--color-black);
 }
 
-section, footer {
+section, footer, hr {
 	margin: 2.25rem 0;
-	padding: 0 4.5rem;  
+	padding: 0 4.5rem;
 }
 
-footer {
+hr {
+	border: 0;
+	border-top: 2px solid var(--color-grey-0);
+}
 
+footer > div {
+	justify-content: space-between;
+}
+
+blockquote {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /*FIRST BREAK POINT === tablet */
@@ -138,7 +172,42 @@ footer {
 		font-size: 1.125rem;
 	}
 
-	p {
+	p, a, span, li, figcaption, blockquote {
 		font-size: 0.9375rem;
+	}
+
+	section, footer, hr {
+		margin: 1.25rem 0;
+		padding: 0 1rem;
+	}
+
+	header {
+		height: 17.5rem;
+	}
+	
+	.header-title {
+		padding: 0.5rem 1rem;
+	}
+
+	/* Nav Code */
+	body > .flex-container {
+		flex-direction: column;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: var(--color-white);
+		padding: 0 1rem;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	button#mobile-menu {
+		display: initial;
 	}
 }
