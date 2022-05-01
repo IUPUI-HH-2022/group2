@@ -121,6 +121,7 @@ button#mobile-menu {
 	font-size: 1.125rem;
 	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 	display: none;
+	align-items: center;
 }
 
 button#mobile-menu:hover {
@@ -200,6 +201,10 @@ blockquote {
 
 .visible {
 	display: block;
+}
+
+.overflow-hidden {
+	overflow: hidden;
 }
 
 @keyframes navLinkFade{

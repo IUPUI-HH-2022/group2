@@ -10,12 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav ul li');
     const button = document.getElementById('mobile-menu');
     const buttonText = document.querySelector('#mobile-menu > span');
+    const body = document.querySelector('body');
 
     // On button click...
     button.addEventListener('click',()=> {
 
         // Toggle navigation
         nav.classList.toggle('visible');
+
+        // Toggle page scroll
+        body.classList.toggle('overflow-hidden');
 
         // Animate links
         navLinks.forEach((link, index) => {
