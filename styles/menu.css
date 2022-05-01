@@ -1,0 +1,66 @@
+/*SECOND BREAK POINT === mobile */
+@media only screen and (max-width: 600px) {
+	body{
+		overflow-x: hidden;
+	}
+	
+	nav {
+		background: blue;
+		
+	}
+	.navList{
+		position:absolute;
+		left: 0 px;
+		/*margin-left: none;*/
+		height: 92vh;
+		top: 8 vh;
+		/*padding-left: 0px;*/ 
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*width: 30%;*/
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.navList li{
+		/*opacity: 0;*/
+		
+	}
+
+		
+	.navItem {
+		width: 30%;
+		padding: 2%;
+	}
+
+
+
+
+	.burger{
+		display: block;
+	}
+	.nav-active{
+		transform: translateX(0%);
+	}
+}
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate (-5px, 6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate (-5px, -6px);
+}
