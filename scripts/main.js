@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('nav ul');
     const navLinks = document.querySelectorAll('nav ul li');
     const button = document.getElementById('mobile-menu');
+    const buttonText = document.querySelector('#mobile-menu > span');
 
-
+    // On button click...
     button.addEventListener('click',()=> {
 
         // Toggle navigation
@@ -24,12 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 25 }s`;
             }
         });
-        
-        // TODO: Fix burger
+
         // Burger animation
         burger.classList.toggle('toggle');
 
-        // TODO: Set text to "Close" or vice versa
+        // If menu is open, set text to close. If closed, set text to Menu
+        if (burger.classList.contains('toggle')) {
+            buttonText.innerHTML = 'Close';
+        } else {
+            buttonText.innerHTML = 'Menu';
+        }
 
     });
 
