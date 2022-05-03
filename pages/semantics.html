@@ -5,20 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Meta Descriptions -->
-		<meta
-			name="title"
-			content="Design for Everyone: A guide to inclusive web design"
-		/>
-
-		<meta
-			name="description"
-			content="Helping developers make their sites accessible for all."
-		/>
-
-		<meta
-			name="keywords"
-			content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility"
-		/>
+		<meta name="title" content="Design for Everyone: A guide to inclusive web design" />
+		<meta name="description" content="Helping developers make their sites accessible for all."/>
+		<meta name="keywords" content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility" />
 
 		<!-- Favicon -->
 		<link rel="icon" href="images/eye.svg" />
@@ -30,152 +19,108 @@
 		<title>Design for Everyone: Semantics</title>
 	</head>
 	<body>
-		<!-- Grid-container -->
-		<div class="grid-container">
-			<!-- Header -->
-			<div class="sticky">
-				<header class="header">
-					<a href="../index.html" class="homeButton"
-						><img src="../images/logo-placeholder.png" alt="logo/home button"
-					/></a>
-				</header>
-
-				<!-- Nav -->
-				<nav class="nav">
-					<ul class="navList">
-						<li class="navItem">
-							<a class="navLink" href="../index.html">Overview</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="text.html">Text and Readability</a>
-						</li>
-
-						<li class="current">
-							<a class="navLink" href="#">Semantics</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="rwd.html">Responsive Design</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="file-size.html">File Size</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="organization.html">Organization</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
+		<div class="flex-container">
+			<!-- Nav -->
+			<nav class="nav">
+				<!-- logo button -->
+				<a href="../index.html" class="logo"><img src="../images/group2Logo.svg" alt="logo/home button"></a>
+				<!-- nav links -->
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="text.html">Text & Readability</a></li>
+					<li class="current"><a href="#">Semantics</a></li>
+					<li><a href="rwd.html">Responsive Web Design</a></li>
+					<li><a href="file-size.html">File Size</a></li>
+					<li><a href="organization.html">Organization Systems</a></li>
+				</ul>
+				<div>
+					<button id="mobile-menu">
+						<span>Menu&nbsp;</span>
+						<div class="burger">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</button>
+				</div>	
+			</nav>
 			<!-- Main -->
 			<main class="main">
-				<!-- Top Image -->
-				<img
-					class="mainImg"
-					src="../images/image-placeholder.jpeg"
-					alt="placeholder"
-				/>
-
-				<!-- Title -->
-				<div class="title">
-					<h1>Semantics</h1>
-					<h4>Subtitle Text</h4>
-				</div>
-
-				<h2>About This Site</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-					blanditiis earum voluptate obcaecati voluptates expedita, hic vero,
-					suscipit alias, quibusdam excepturi ullam exercitationem. In
-					reprehenderit dolorem aperiam dignissimos pariatur? Vitae?
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-					nisi iure delectus quod optio cumque odit est modi, placeat ipsam
-					iusto fuga consequatur id commodi quos eos quaerat sunt consectetur.
-				</p>
-
-				<h2>About us</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-					tempora ex voluptates harum distinctio suscipit voluptatum
-					necessitatibus ut veniam. Doloribus pariatur molestias accusamus
-					voluptate facilis impedit sequi tempore, culpa ex.
-				</p>
-
-				<img
-					class="hhImage"
-					src="../images/image-placeholder.jpeg"
-					alt="image"
-				/>
-
-				<h3>Haaga-Helia</h3>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-					dicta vel, est eum alias cupiditate vero tempore eaque voluptates sunt
-					exercitationem facere praesentium, non impedit earum cumque architecto
-					optio neque? Learn more at
-					<a href="https://www.haaga-helia.fi/en">haaga-helia.fi</a>
-				</p>
-
-				<img
-					class="iupuiImage"
-					src="../images/image-placeholder.jpeg"
-					alt="image"
-				/>
-				<h3>IUPUI</h3>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-					dicta sint. Itaque pariatur amet impedit voluptatem eveniet accusamus,
-					voluptatum placeat aperiam nulla quos tempora culpa aliquid
-					consequatur. Quibusdam, iste doloribus?
-				</p>
-
-				<h2>Helpful Resources</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-					mollitia, itaque quis laborum quos veniam libero repellendus deleniti
-					ex similique harum praesentium aut voluptatibus suscipit voluptates?
-					Maiores inventore obcaecati sed?
-				</p>
-
-				<ul>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-							class="resource"
-							>google.com</a
-						>
-					</li>
-				</ul>
+				<!-- Header -->
+				<header>
+					<!-- Top Image -->
+					<img src="../images/placeholder-header-image.png" alt="placeholder" />
+					<div class="header-title subpage">
+						<h1>Semantics</h1>
+					</div>
+				</header>
+				<!-- Content -->
+				<section>
+					<h2>What is semantics and why is it important for web design</h2>
+					<p>Semantics is the study of language and the meaning/s behind words. In web design, this translates to using HTML to give meaning to the elements in your web site which can give users a better experience and make the site easier to navigate. This is especially important for making a site accessible for those who use assistive technology like screen readers.</p>
+				</section>
+				<section>
+					<h2>How do we do this</h2>
+					<p>In HTML 5, there are approximately 110 elements that have a meaning associated with them and 2 that do not, &lt;div&gt; and &lt;span&gt; (W3Schools, n.d.). These elements act as landmarks for screen readers and each has a role associated with it.</p>
+				</section>
+				<section>
+					<h2>Headings</h2>
+					<p>The use of correct headings is essential for semantic markup. This forms the basic structure of your website. Just like visual web users, people who use screen readers can understand the structure of a page when correct headings are used. If you want to skip one level of heading in your design, you have the option to make it a hidden heading using a CSS class .sr-only, that way the page will still read correctly when used by a screen reader.</p>
+					<pre>
+						<!-- Intentionally indented this way for formatting purposes -->
+						<code>
+.sr-only { 
+	position: absolute; 
+	left: -10000px; 
+	top: auto; 
+	width: 1px; 
+	height: 1px; 
+	overflow: hidden; 
+} 
+						</code>
+					</pre>
+					<figcaption>Taken from W3Schools</figcaption>
+				</section>
+				<section>
+					<h2>Tags</h2>
+					<p>Some common tags/elements/landmarks to use to differentiate the parts of your site are:</p>
+					<ul>
+						<li>&lt;header&gt; - Information about the website, associated with the role “banner”</li>
+						<li>&lt;main&gt; - contains the main content of the webpage</li>
+						<li>&lt;nav&gt; -  navigation for the website</li>
+						<li>&lt;section&gt; - defines a section within page or document</li>
+						<li>heading tags - &lt;h1&gt; - &lt;h6&gt; - define the hierarchy of information</li>
+						<li>&lt;article&gt; - separate, self-contained content</li>
+						<li>&lt;aside&gt; - use for information that goes with the content but can stand alone</li>
+						<li>&lt;figure&gt; - use for images, illustrations, diagrams, etc.</li>
+						<li>&lt;form&gt; - contains a form
+						<li>&lt;table&gt; - an element that contains rows and columns, table structure</li>
+						<li>&lt;footer&gt; - contains information about the site, i.e.. Copyright, logo, nav links, etc.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Additional Resources</h2>
+					<ul>
+						<li><a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/ ">Accessible Heading Structure</a></li>
+						<li><a href="https://web.dev/responsive-images/">Accessibility Semantic Elements (w3schools.com)</a></li>
+						<li><a href="https://accessibilityinsights.io">Accessibility Insights</a></li>
+						<li><a href="https://www.youtube.com/watch?v=vAAzdi1xuUY">Why headings and landmarks are so important -- A11ycasts #18</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques">Using ARIA: Roles, states, and properties</a></li>
+					</ul>
+				</section>
+				<!-- Footer -->
+				<hr>
+				<footer>
+					<div class="flex-container">
+						<a class="logo" href="../index.html"><img src="../images/group2Logo.svg" alt="logo"/></a>
+						<a href="#">Back to Top</a>
+					</div>
+					<blockquote>“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.” — Tim Berners-Lee, W3C Director and inventor of the World Wide Web</blockquote>
+					<p>Copyright <span id="copyright-year">2022</span></p>
+				</footer>
 			</main>
-
-			<footer class="footer">
-				<a href="#" class="btt">Back to Top</a>
-				<a href="../index.html"
-					><img src="../images/logo-placeholder.png" alt="logo"
-				/></a>
-				<p>Copyright 2022</p>
-			</footer>
 		</div>
-		<!-- End container -->
 	</body>
-	<script src="scripts/main.js"></script>
+	<!-- Scripts -->
+	<script src="../scripts/main.js"></script>
 </html>

@@ -5,20 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Meta Descriptions -->
-		<meta
-			name="title"
-			content="Design for Everyone: A guide to inclusive web design"
-		/>
-
-		<meta
-			name="description"
-			content="Helping developers make their sites accessible for all."
-		/>
-
-		<meta
-			name="keywords"
-			content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility"
-		/>
+		<meta name="title" content="Design for Everyone: A guide to inclusive web design" />
+		<meta name="description" content="Helping developers make their sites accessible for all."/>
+		<meta name="keywords" content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility" />
 
 		<!-- Favicon -->
 		<link rel="icon" href="images/eye.svg" />
@@ -30,174 +19,94 @@
 		<title>Design for Everyone: Home</title>
 	</head>
 	<body>
-		<!-- Grid-container -->
-		<div class="grid-container">
-			<div class="sticky">
-				<!-- ^this container sticks the nav to the side-->
-
-				<!-- Nav -->
-				<nav class="nav">
-					<!-- logo button -->
-					<a href="index.html" class="homeButton"
-						><img src="images/logo-placeholder.png" alt="logo/home button"
-					/></a>
-
-					<!-- nav -->
-					<ul class="navList">
-						<li class="current">
-							<a class="navLink" href="#">Home</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="pages/text.html">Text and Readability</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="pages/semantics.html">Semantics</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="pages/rwd.html">Responsive Design</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="pages/file-size.html">File Size</a>
-						</li>
-
-						<li class="navItem">
-							<a class="navLink" href="pages/organization.html">Organization</a>
-						</li>
-					</ul>
-					<div class="burger">
-						<div class ="line1"></div>
-						<div class ="line2"></div>
-						<div class ="line3"></div>
-					</div>
-				</nav>
-
-			</div>
-
-			<!-- Header -->
-			<header class="header">
-				<!-- Top Image -->
-				<img
-					class="mainImg"
-					src="images/image-placeholder.jpeg"
-					alt="placeholder"
-				/>
-
-				<!-- Title -->
-				<div class="title">
-					<h1>Home</h1>
-					<h4>Subtitle Text</h4>
-				</div>
-			</header>
-
+		<div class="flex-container">
+			<!-- Nav -->
+			<nav class="nav">
+				<!-- logo button -->
+				<a href="index.html" class="logo"><img src="images/group2Logo.svg" alt="logo/home button"></a>
+				<!-- nav links -->
+				<ul>
+					<li class="current"><a href="#">Home</a></li>
+					<li><a href="pages/text.html">Text & Readability</a></li>
+					<li><a href="pages/semantics.html">Semantics</a></li>
+					<li><a href="pages/rwd.html">Responsive Web Design</a></li>
+					<li><a href="pages/file-size.html">File Size</a></li>
+					<li><a href="pages/organization.html">Organization Systems</a></li>
+				</ul>
+				<div>
+					<button id="mobile-menu">
+						<span>Menu&nbsp;</span>
+						<div class="burger">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</button>
+				</div>	
+				
+			</nav>
 			<!-- Main -->
 			<main class="main">
+				<!-- Header -->
+				<header>
+					<!-- Top Image -->
+					<img src="images/placeholder-header-image.png" alt="placeholder" />
+					<div class="header-title">
+						<h1>Home</h1>
+					</div>
+				</header>
 				<!-- Content -->
-				<section class="about-site">
-					<h2>About This Site</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-						blanditiis earum voluptate obcaecati voluptates expedita, hic vero,
-						suscipit alias, quibusdam excepturi ullam exercitationem. In
-						reprehenderit dolorem aperiam dignissimos pariatur? Vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-						nisi iure delectus quod optio cumque odit est modi, placeat ipsam
-						iusto fuga consequatur id commodi quos eos quaerat sunt consectetur.
-					</p>
+				<section>
+					<h2>Designing for Everyone!</h2>
+					<p>The world wide web has changed everything - from the way we communicate with each other to our business practices to how we interact with the world. We have unprecedented access to other parts of the world through websites. However, not everyone has been able to participate equally with the web, due in part to how the web pages themselves are designed. Web users with disabilities or impairments, be it visual, auditory, physical or otherwise, found themselves left behind in the web revolution.</p>
+					<p>Web accessibility isn’t just about individuals with permanent disabilities. The limitations could be situational, such as using a mobile device, being in bright sunlight, or not having access to high speed Internet.</p>
+					<p>Thankfully, as web programming and design has evolved, so too has the ability to address their accessibility deficiencies. Now more than ever, web designers are able to make their pages friendly and accessible to anyone and everyone with access to the internet, whether it is on a desktop computer or a mobile device. This means maximizing the number and diversity of users able to interact with your site! A win for everybody.</p>
 				</section>
-
-				<section class="about-us">
-					<h2>About us</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-						tempora ex voluptates harum distinctio suscipit voluptatum
-						necessitatibus ut veniam. Doloribus pariatur molestias accusamus
-						voluptate facilis impedit sequi tempore, culpa ex.
-					</p>
+				<section>
+					<h2>Our Mission</h2>
+					<p>The aim of this web site is to provide insight, education, and resources for anyone interested in accessibility in web design, whether you’re a web designer, a person with an impairment, or a curious student.</p>
 				</section>
-
-				<section class="haaga-helia">
-					<img
-						class="hhImage"
-						src="images/image-placeholder.jpeg"
-						alt="image"
-					/>
-
-					<h3>Haaga-Helia</h3>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-						dicta vel, est eum alias cupiditate vero tempore eaque voluptates
-						sunt exercitationem facere praesentium, non impedit earum cumque
-						architecto optio neque? Learn more at
-						<a href="https://www.haaga-helia.fi/en">haaga-helia.fi</a>
-					</p>
-				</section>
-
-				<section class="iupui">
-					<img
-						class="iupuiImage"
-						src="images/image-placeholder.jpeg"
-						alt="image"
-					/>
-					<h3>IUPUI</h3>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-						dicta sint. Itaque pariatur amet impedit voluptatem eveniet
-						accusamus, voluptatum placeat aperiam nulla quos tempora culpa
-						aliquid consequatur. Quibusdam, iste doloribus?
-					</p>
-				</section>
-
-				<section class="resources">
-					<h2>Helpful Resources</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-						mollitia, itaque quis laborum quos veniam libero repellendus
-						deleniti ex similique harum praesentium aut voluptatibus suscipit
-						voluptates? Maiores inventore obcaecati sed?
-					</p>
-
+				<section>
+					<h2>Getting Started</h2>
+					<p>While there are many design features to be considered and incorporated, our focus has been narrowed down to five primary categories:</p>
 					<ul>
-						<li>
-							<a
-								href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-								class="resource"
-								>google.com</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-								class="resource"
-								>google.com</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjcoP-DppT3AhX8QvEDHbekAwwQPAgI"
-								class="resource"
-								>google.com</a
-							>
-						</li>
+						<li><a href="pages/text.html">Text & Readability</a> - From size to color, text choices represent a BIG part of accessibility design.</li>
+						<li><a href="pages/semantics.html">Semantics</a> - Accessibility can be baked directly into your code!</li>
+						<li><a href="pages/rwd.html">Responsive Web Design</a> - Ensuring that users have optimal experiences based on what kind of device they use to access your site.</li>
+						<li><a href="pages/file-size.html">File Size</a> - Don't nuke your site's download speed with cumbersome file sizes.</li>
+						<li><a href="pages/organization.html">Organization Systems</a> - The organization of your site can make or break a user's experience</li>
+					</ul>
+					<p>For more information and further research about additional accessibilty features, see our <a href="#resources">Resources</a> section below.</p>
+				</section>
+				<section>
+					<h2>About Us</h2>
+					<div class="image-group">
+						<img src="images/haaga-helia.png" alt="image"/>
+						<img src="images/iupui.png" alt="image"/>
+					</div>
+					<figcaption>(1) Haaga-Helia (2) IUPUI</figcaption>
+					<p>We are a team of students working via a collaboration between Indiana University Purdue University Indianapolis in the United States and Haaga-Helia University of Applied Sciences in Helsinki, Finland. Our backgrounds are diverse, spanning multiple countries and educational backgrounds. Some of us are seasoned web devs, others are recent initiates. All of us are passionate about ensuring that web sites maximize their user base through accessibility features!</p>
+				</section>
+				<section id="resources">
+					<h2>Resources</h2>
+					<p>For additional information about web accessibility, take a look at some of the work done by big names in the tech world:</p>
+					<ul>
+						<li><a href="https://www.w3.org">W3C (World Wide Web Consortium)</a> - The international standards-setting organization for the web and spearheaded by the creator of the web itself, W3C has a robust educational module on web accessibility, including educational videos and links to resources.</li>
+						<li><a href="https://webaim.org">WebAim</a> - A non-profit based at the Institute for Disability Research, Policy, and Practice at Utah State University, this organization has distinguished itself as international experts in web design. Not only do they provide online evaluation tools to check a site’s accessibility compliance, they are also a source of education and training in web accessibility and design for both individuals and organizations.</li>
 					</ul>
 				</section>
+				<!-- Footer -->
+				<hr>
+				<footer>
+					<div class="flex-container">
+						<a class="logo" href="index.html"><img src="images/group2Logo.svg" alt="logo"/></a>
+						<a href="#">Back to Top</a>
+					</div>
+					<blockquote>“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.” — Tim Berners-Lee, W3C Director and inventor of the World Wide Web</blockquote>
+					<p>Copyright <span id="copyright-year">2022</span></p>
+				</footer>
 			</main>
-
-			<!-- Footer -->
-			<footer class="footer">
-				<a href="#" class="btt">Back to Top</a>
-				<a href="index.html"
-					><img src="images/logo-placeholder.png" alt="logo"
-				/></a>
-				<p>Copyright 2022</p>
-			</footer>
 		</div>
-		<!-- End grid-container -->
 	</body>
 	<!-- Scripts -->
 	<script src="scripts/main.js"></script>
