@@ -5,12 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Meta Descriptions -->
-		<meta name="title" content="Design for Everyone: A guide to inclusive web design" />
-		<meta name="description" content="Helping developers make their sites accessible for all."/>
-		<meta name="keywords" content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility" />
+		<meta
+			name="title"
+			content="Design for Everyone: A guide to inclusive web design"
+		/>
+		<meta
+			name="description"
+			content="Helping developers make their sites accessible for all."
+		/>
+		<meta
+			name="keywords"
+			content="inclusive, inclusive design, design, colorblind, screen reader, accessible, accessibility"
+		/>
 
 		<!-- Favicon -->
-		<link rel="icon" href="images/eye.svg" />
+		<link rel="icon" href="../images/eye.svg" />
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="../styles/main.css" />
@@ -23,7 +32,9 @@
 			<!-- Nav -->
 			<nav class="nav">
 				<!-- logo button -->
-				<a href="../index.html" class="logo"><img src="../images/group2Logo.svg" alt="logo/home button"></a>
+				<a href="../index.html" class="logo"
+					><img src="../images/group2Logo.svg" alt="logo/home button"
+				/></a>
 				<!-- nav links -->
 				<ul>
 					<li><a href="../index.html">Home</a></li>
@@ -42,8 +53,7 @@
 							<div></div>
 						</div>
 					</button>
-				</div>	
-				
+				</div>
 			</nav>
 			<!-- Main -->
 			<main class="main">
@@ -57,27 +67,66 @@
 				</header>
 				<!-- Content -->
 				<section>
-					<p>The way a website is organized has a big impact on accessibility. With a few simple layout ideas, you can ensure that all users are able to access and enjoy your website comfortably.</p>
+					<p>
+						The way a website is organized has a big impact on accessibility.
+						With a few simple layout ideas, you can ensure that all users are
+						able to access and enjoy your website comfortably.
+					</p>
 				</section>
 				<section>
 					<h2>Consistency is Key</h2>
-					<p>By keeping key structures in your design consistent, users are able to more quickly and easily navigate your site. If you move objects around for the sake of interest, you'll be making the user confused, frustrated, and forced off your page.</p>
-					<p>For structures such as the navigation bar, don't switch it up. Keep it in one location across all pages, and make sure the navbar options are uniform as well</p>
+					<p>
+						By keeping key structures in your design consistent, users are able
+						to more quickly and easily navigate your site. If you move objects
+						around for the sake of interest, you'll be making the user confused,
+						frustrated, and forced off your page.
+					</p>
+					<p>
+						For structures such as the navigation bar, don't switch it up. Keep
+						it in one location across all pages, and make sure the navbar
+						options are uniform as well
+					</p>
 					<div class="image-group">
-						<img src="../images/organization-systems-wireframe.png" alt="image"/>
+						<img
+							src="../images/organization-systems-wireframe.png"
+							alt="image"
+						/>
 					</div>
 					<figcaption>Caption Text</figcaption>
-					<p>The page layout should be consistent across the site, as well - if the pages differ too much from one another, users may think they've left your site!</p>
+					<p>
+						The page layout should be consistent across the site, as well - if
+						the pages differ too much from one another, users may think they've
+						left your site!
+					</p>
 				</section>
 				<section>
 					<h2>Hamburger Menu</h2>
-					<p>No, we aren't talking about the Big Mac — we are talking about that tried and true classic, the Hamburger Navigation Menu. Navigation bars, while essential for users to effectively use your site, can take up a lot of space on page, particularly on mobile devices such as cell phones where screen real estate is at a premium. Enter the Hamburger Menu:</p>
+					<p>
+						No, we aren't talking about the Big Mac — we are talking about that
+						tried and true classic, the Hamburger Navigation Menu. Navigation
+						bars, while essential for users to effectively use your site, can
+						take up a lot of space on page, particularly on mobile devices such
+						as cell phones where screen real estate is at a premium. Enter the
+						Hamburger Menu:
+					</p>
 					<div class="image-group">
-						<img src="../images/hamburger-example.png" alt="image"/>
+						<img src="../images/hamburger-example.png" alt="image" />
 					</div>
 					<figcaption>Caption Text</figcaption>
-					<p>The hamburger menu is becoming nearly as ubiquitous as the floppy disk icon for “Save” or the wireframe basket for “Trash”. By using these three horizontal bars in lieu of your navigation bar on smaller viewports, the user is cued to click on it, revealing the hidden navbar.</p>
-					<p>That having been said, some hamburger menus pose an issue for users accessing the web with a screen reader - the screen reader may skip over it entirely or interpret it incorrectly, based on your CSS. One simple fix can be achieved using aria labels in your CSS. Consider adding the following:</p>
+					<p>
+						The hamburger menu is becoming nearly as ubiquitous as the floppy
+						disk icon for “Save” or the wireframe basket for “Trash”. By using
+						these three horizontal bars in lieu of your navigation bar on
+						smaller viewports, the user is cued to click on it, revealing the
+						hidden navbar.
+					</p>
+					<p>
+						That having been said, some hamburger menus pose an issue for users
+						accessing the web with a screen reader - the screen reader may skip
+						over it entirely or interpret it incorrectly, based on your CSS. One
+						simple fix can be achieved using aria labels in your CSS. Consider
+						adding the following:
+					</p>
 					<pre>
 						<!-- Intentionally indented this way for formatting purposes -->
 						<code>
@@ -86,29 +135,68 @@
 	&lt;/a&gt;								
 					</code>
 				</pre>
-				<p>The aria-label=”Open the menu”> is not visible on the screen and does not execute any action, it is only there for the screen reader to catch and convey to the user. Additionally, the aria-hidden=”true” will hide the icon from the screen reader, as the previous aria label makes it redundant and potentially confusing for the user.</p>
+					<p>
+						The aria-label=”Open the menu”> is not visible on the screen and
+						does not execute any action, it is only there for the screen reader
+						to catch and convey to the user. Additionally, the
+						aria-hidden=”true” will hide the icon from the screen reader, as the
+						previous aria label makes it redundant and potentially confusing for
+						the user.
+					</p>
 				</section>
 				<section>
 					<h2>Label, Label, Label</h2>
-					<p>The labels you use around the site - including the navbar - should keep the casual user in mind. If you're using labels that only initiates into your domain will understand, you're turning users away at the door. Instead, go into your label strategy with a plan rather than off-the-cuff ideas.</p>
-					<p>Labels should clearly indicate the content that follows them - whether on a navbar or in your headers. Additionally, labels are not an opportunity to reinvent the wheel. Users are comfortable with nearly global standards for navbar labels, and if you stray too far from this, you'll leave your users confused and fatigued from navigating a new system.</p>
-					<p>Additionally, as with the Hamburger Menu above, the simple use of aria labels in your CSS will allow screen readers to more accurately describe your site to users!</p>
+					<p>
+						The labels you use around the site - including the navbar - should
+						keep the casual user in mind. If you're using labels that only
+						initiates into your domain will understand, you're turning users
+						away at the door. Instead, go into your label strategy with a plan
+						rather than off-the-cuff ideas.
+					</p>
+					<p>
+						Labels should clearly indicate the content that follows them -
+						whether on a navbar or in your headers. Additionally, labels are not
+						an opportunity to reinvent the wheel. Users are comfortable with
+						nearly global standards for navbar labels, and if you stray too far
+						from this, you'll leave your users confused and fatigued from
+						navigating a new system.
+					</p>
+					<p>
+						Additionally, as with the Hamburger Menu above, the simple use of
+						aria labels in your CSS will allow screen readers to more accurately
+						describe your site to users!
+					</p>
 				</section>
 				<section>
 					<h2>Additional Resources</h2>
 					<ul>
-						<li><a href="http://www.ashleysheridan.co.uk/blog/Making+an+Accessible+Hamburger+Menu">Ashley Sheridan - Hamburger Menu Accessibility Alternatives</a></li>
-						<li><a href="https://www.w3.org/WAI/tutorials/forms/labels/">W3 Schools: Labels</a></li>
+						<li>
+							<a
+								href="http://www.ashleysheridan.co.uk/blog/Making+an+Accessible+Hamburger+Menu"
+								>Ashley Sheridan - Hamburger Menu Accessibility Alternatives</a
+							>
+						</li>
+						<li>
+							<a href="https://www.w3.org/WAI/tutorials/forms/labels/"
+								>W3 Schools: Labels</a
+							>
+						</li>
 					</ul>
 				</section>
 				<!-- Footer -->
-				<hr>
+				<hr />
 				<footer>
 					<div class="flex-container">
-						<a class="logo" href="../index.html"><img src="../images/group2Logo.svg" alt="logo"/></a>
+						<a class="logo" href="../index.html"
+							><img src="../images/group2Logo.svg" alt="logo"
+						/></a>
 						<a href="#">Back to Top</a>
 					</div>
-					<blockquote>“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.” — Tim Berners-Lee, W3C Director and inventor of the World Wide Web</blockquote>
+					<blockquote>
+						“The power of the Web is in its universality. Access by everyone
+						regardless of disability is an essential aspect.” — Tim Berners-Lee,
+						W3C Director and inventor of the World Wide Web
+					</blockquote>
 					<p>Copyright <span id="copyright-year">2022</span></p>
 				</footer>
 			</main>
