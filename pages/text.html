@@ -56,7 +56,7 @@
 				</header>
 				<!-- Content -->
 				<section>
-					<p>There are many different types of web users out there and each person has their own set of experiences and challenges that they are bringing to the table. Web designers should have these challenges in mind when creating a site. One reason being that, in some areas, there are laws in place to make sites accessible but also, it is just good practice to be accessible for all. Not only do some of these fixes make a site better for people with these specific challenges but they can also be beneficial to all users.</p>
+					<p>There are many different types of web users out there and each person has their own set of experiences and challenges that they are bringing to the table. Web designers should have these challenges in mind when creating a site. One reason being that, in some areas, there are laws in place to make sites accessible but also, it is just good practice to be accessible for all. Not only do some of these fixes make a site better for people with these specific challenges but they can also be beneficial to all users. </p>
 					<p>Some of the different challenges that we are looking at here for text and readability are users with visual difficulties, users with hearing difficulties, users with mobility devices, & users with cognitive disabilities.</p>
 				</section>
 				<section>
@@ -69,10 +69,47 @@
 					<p>Users with hearing impairments, including being deaf or simply hard-of-hearing, can struggle with auditory aspects of webpages, including music or videos. If your page is going to include auditory elements at all, be sure to include redundant visual forms of them --- is there music playing? Let them know! Is there a video on the page, especially one that is integral to the content? Include a transcript or closed-captioning.  </p>
 				</section>
 				<section>
+					<h2>Mobility Considerations </h2>
+					<p>Your website will likely be receiving traffic from users with a mobility impairment of some kind. Mobility impairments are incredibly common and can stem from either acute or chronic conditions - ranging from a broken wrist to carpal tunnel to Parkinson's to amputations. By keeping a few simple considerations in mind, you can make sure your users are able to navigate your site comfortably. </p>
+					<p>Make sure your page does not require the use of a mouse for navigation. Many users, including those with mobility or even visual impairments, rely on the keyboard for accessing a website. Including an option to “Skip Navigation” so that the user isn't tabbing through hundreds of navigation items at the top is one option: </p>
+					<pre>
+						<!-- Intentionally indented this way for formatting purposes -->
+						<code>
+							&lt;body&gt; 
+								&lt;a href="#maincontent"&gt;Skip to main content&lt;/a&gt;
+								... 
+								&lt;main id="maincontent"&gt;
+								&lt;h1&gt;Heading&lt;/h1&gt; 
+								&lt;p&gt;This is the first paragraph&lt;/p&gt;
+						</code>
+					</pre>
+					<p>Another consideration is ensuring that your page includes or is compatible with keyboard focus indicators. Without this, it is like navigating a page without a cursor! This allows users accessing your site via keyboard to know where they are on the page. </p>
+				</section>
+				<section>
+					<h2>Cognitive & Neurological Considerations </h2>
+					<p>Users from all walks of life, from differing backgrounds, will be accessing your page. This is likely to include users with cognitive impairments of some kind, whether it is ADHD, a traumatic brain injury, or the effects of aging. Employing a consistent design across pages, using clear language, choosing a dyslexia-friendly typeface, and avoiding culturally-specific language can make your site more friendly for users.</p>
+					<p>Something else to consider is users with epilepsy and other physical reactions to content such as nausea, dizziness, headaches, etc. (W3).  If you are using effects or video make sure that the number of flashes is limited. According to W3, the success criteria is no more than 3 flashes per second or below the flash threshold, but if you can avoid flashes altogether, that might be the best way as it can also be distracting for people with ADHD. Finally, you want to avoid animation that is activated by a user's actions or allow the user the option to turn that animation off. Animations like these can cause nausea or other physical reactions in some users. </p>
+					<p>Use this media query for reduced motion:</p>
+					<pre>
+						<code>
+							/* Applies styles when Reduced Motion is enabled */  
+							@media screen and (prefers-reduced-motion: reduce) { }  
+							
+							(taken from CSS-tricks.com) 
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Device Considerations </h2>
+					<p>Users may be accessing your site from older devices, whether this is because of their age or socioeconomic class (or simply preference!). While there is certainly a temptation to make our sites as modern as possible, you run the risk of rendering your site completely inaccessible from those with older devices. There is no faster way to lose the interest of a potential user than for them to not even be able to load your site! While you don't need to shun modern site techniques, keep these users in mind when thinking about potential alternative ways of accessing your site. </p>
+				</section>
+				<section>
 					<h2>Additional Resources</h2>
 					<li><a href="https://fuzzymath.com/blog/improve-accessibility-for-visually-impaired-users/ ">Improve accessibility for visually impaired users</a></li>
 					<li><a href="https://webaim.org/intro/">Introduction to Web Accessibility</a></li>
 					<li><a href="https://www.w3.org/WAI/policies/">Web accessibility Laws and Policies</a></li>
+					<li><a href="https://trace.umd.edu/peat/">Photosensitive Epilepsy Analysis Tool (PEAT)</a></li>
+					<li><a href="https://css-tricks.com/introduction-reduced-motion-media-query/">An Introduction to the Reduced Motion Media Query</a></li>
 				</section>
 				<!-- Footer -->
 				<hr>
