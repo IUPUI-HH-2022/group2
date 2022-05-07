@@ -5,7 +5,7 @@
     --color-grey-1: #3C3C3C;
     --color-black: #101010;
 	--color-blue-0: #2F80ED;
-	--color-blue-1: #467ECA;
+	--color-blue-1: #4675CA;
 	--color-blue-2: #2E507E;
 }
 
@@ -124,7 +124,7 @@ button#mobile-menu {
 	border-radius: 0.25rem;
 	font-weight: bold;
 	border: 0;
-	color: var(--color-blue-0);
+	color: var(--color-blue-2);
 	cursor: pointer;
 	font-size: 1.125rem;
 	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -143,7 +143,7 @@ button#mobile-menu:hover {
 .burger > div {
 	height: 0.25rem;
 	width: 1.5rem;
-	background-color: var(--color-blue-0);
+	background-color: var(--color-blue-2);
 	margin: 0.25rem 0;
 	border-radius: 0.125rem;
 	transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
