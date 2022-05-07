@@ -87,14 +87,18 @@
 						they may be stacked. Some aspects of the page, like images, may be
 						hidden completely.
 					</p>
-					<p>
-						Since users can do everything from finding information to checking
-						in virtually with family to ordering groceries online and have them
-						delivered from phones, having a website that adjusts for mobile use
-						will make the web accessible to people with smaller screens. One of
-						the ways that designers are handling this is to design for mobile
-						first. You can do this with HTML and CSS.
-					</p>
+					<p>Since users can do everything from finding information to checking in virtually with family to ordering groceries online and have them delivered from phones, having a website that adjusts for mobile use will make the web accessible to people with smaller screens. One of the ways that designers are handling this is to design for mobile first. You can do this with HTML and CSS.</p>
+					<p>Let’s start with the viewport. You want to set this so that the page is scaled properly on any device. Use the following &lt;meta&gt; tag in your webpages:</p>
+					<pre>
+						<!-- Intentionally indented this way for formatting purposes -->
+						<code>
+&lt;meta name=”viewport” content=”width=device-width, initial-scale=1.0”&gt;
+						</code>
+					</pre>
+					<p>This tells the browser how to control the page.</p>
+					<p>Next with CSS, you can create media queries that will allow the design to change with the size of the viewers screen. Since the goal is to design mobile first, the media query needs to state to change the design when the screen gets larger. This can be done by using “min-width” instead of “max-width”. Here is a list of 5 typical breakpoints, taken from W3Schools:</p>
+					<img src="../images/w3-schools-code-snippet.png" alt="W3 Schools Media Query Code Snippet">
+					<p>Once you have created these media queries, you can then style the page to hide certain elements at different levels, change font sizes, colors, or any number of things. Remember, making a responsive site allows users more freedom and they are less likely to leave the site because of design issues.</p>
 				</section>
 				<!-- Footer -->
 				<hr />
