@@ -193,6 +193,10 @@ section, footer, hr {
 	max-width: 15rem; /* 240px */
 }
 
+.image-group-2 img {
+	max-width: 35rem; /* 560 */
+}
+
 hr {
 	border: 0;
 	border-top: 0.125rem solid var(--color-grey-0);
@@ -328,6 +332,10 @@ blockquote {
 		display: block;
 	}
 
+	.image-group-2 img {
+		max-width: 28rem; /* 448 */
+	}
+	
 	.image-group img:first-child {
 		margin-bottom: 1rem;
 	}
