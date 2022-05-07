@@ -177,11 +177,11 @@ header img {
 	bottom: 0;
 	width: 100%;
 	padding: 0.75rem 4.5rem;
-	background-color: var(--color-blue-0);
+	background-color: rgba(47, 128, 237, 0.8);
 }
 
 .header-title.subpage {
-	background-color: var(--color-black);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 section, footer, hr {
